@@ -50,6 +50,8 @@ int SharpGame::GetWinner (){
     if(w)return w;
     w = InJudge(0, 2, 1, -1);
     if(w)return w;
+
+    return 0;
 }
 
 bool SharpGame::IsFull(){
