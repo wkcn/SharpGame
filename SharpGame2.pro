@@ -7,6 +7,7 @@
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QMAKE_CXXFLAGS += -std=c++11
 
 TARGET = SharpGame
 TEMPLATE = app
@@ -14,8 +15,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    defines.cpp \
-    sharpgame.cpp
+    defines.cpp
 
 HEADERS  += mainwindow.h \
     defines.h \
